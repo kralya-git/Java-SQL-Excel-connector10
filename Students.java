@@ -34,6 +34,7 @@ public class Students {
         String name = s.next();
         System.out.print("Введите группу: ");
         String group = s.next();
+        System.out.print("\n");
 
         return new Students(id, program, name, group);
     }
