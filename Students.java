@@ -20,7 +20,7 @@ public class Students {
 
     @Override
     public String toString() {
-        return String.format("| %20s | %20s | %20s | %20s \n", this.id, this.program, this.name, this.group);
+        return String.format("%s\t | \t %s\t | \t %s\t | \t%s", this.id, this.program, this.name, this.group);
     }
 
     public static Students insert() {
@@ -55,7 +55,7 @@ public class Students {
             students.add(Students.insert());
         }
         
-        System.out.printf("| %20s | %20s | %20s | %20s \n", "ID", "Направление", "Имя", "Группа");
+        System.out.println("ID\t|\tНаправление подготовки\t|\tИмя\t|\tГруппа");
         for (Students st : students) {
             System.out.println(st.toString());
         }
