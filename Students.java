@@ -54,11 +54,7 @@ public class Students {
         for (int i = 0; i < number; i++) {
             students.add(Students.insert());
         }
-
-        String buf_id = "ID";
-        String buf_program = "Направление подготовки";
-        String buf_name = "Имя";
-        String buf_group = "Группа";
+        
         System.out.printf("| %20s | %20s | %20s | %20s \n", "ID", "Направление", "Имя", "Группа");
         for (Students st : students) {
             System.out.println(st.toString());
