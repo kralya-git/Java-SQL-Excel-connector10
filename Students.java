@@ -26,7 +26,7 @@ public class Students {
     public static Students insert() {
         Scanner s = new Scanner(System.in);
 
-        System.out.print("Введите ID студента: ");
+        System.out.print("\nВведите ID студента: ");
         int id = s.nextInt();
         System.out.print("Введите направление подготовки: ");
         String program = s.next();
@@ -34,7 +34,6 @@ public class Students {
         String name = s.next();
         System.out.print("Введите группу: ");
         String group = s.next();
-        System.out.print("\n");
 
         return new Students(id, program, name, group);
     }
@@ -43,7 +42,7 @@ public class Students {
     public static List<Students> input() {
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Введите количество студентов для внесения (не менее 5): ");
+        System.out.println("\nВведите количество студентов для внесения (не менее 5): ");
         int number = s.nextInt();
         if (number < 5){
             System.out.println("Количество меньше пяти.");
