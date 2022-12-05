@@ -135,7 +135,7 @@ public class Students_database {
                         Class.forName("com.mysql.cj.jdbc.Driver");
                         Connection con5 = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "кщще");
 
-                        System.out.println("Введите ID студента:");
+                        System.out.println("\nВведите ID студента:");
                         int id = scan.nextInt();
 
                         Statement stmt = con5.createStatement();
@@ -144,7 +144,7 @@ public class Students_database {
                         ResultSetMetaData rsmd = rs.getMetaData();
                         int columnsNumber = rsmd.getColumnCount();
 
-                        System.out.println("ID\tНаправление\tИмя\tГруппа");
+                        System.out.println("\nID\tНаправление\tИмя\tГруппа");
 
                         while (rs.next()) {
                             for(int i = 1 ; i <= columnsNumber; i++){
@@ -165,7 +165,7 @@ public class Students_database {
                         Class.forName("com.mysql.cj.jdbc.Driver");
                         Connection con6 = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "кщще");
 
-                        System.out.println("Введите ID студента:");
+                        System.out.println("\nВведите ID студента:");
                         int id = scan.nextInt();
 
                         Statement stmt = con6.createStatement();
